@@ -12,30 +12,42 @@
 
 <body>
   <header class="header">
-    <a href="" class="brand">Roberto Martins</a>
-    <nav>
-      <a href="">Sobre</a>
-      <a href="">Tecnologias</a>
-      <a href="">Projetos</a>
-    </nav>
+    <div class="container">
+      <a href="" class="brand">Roberto Martins</a>
+      <button class="btn-mobile">
+        <div class="bars"></div>
+        <div class="bars"></div>
+        <div class="bars"></div>
+      </button>
+      <nav class="menu">
+        <a class="menu-link" href="">Sobre</a>
+        <a class="menu-link" href="">Tecnologias</a>
+        <a class="menu-link" href="">Projetos</a>
+      </nav>
+    </div>
   </header>
 
   <main>
 
-    <section class="me" id="me">
-      <p>Olá, eu sou</p>
-      <h2>Roberto Martins</h2>
-      <p>Futuro Desenvolvedor Front-End</p>
-      <ul class="link">
-        <li><a href="">GitHub</a></li>
-        <li><a href="">Linkedin</a></li>
-        <li><a href="">Currículo</a></li>
-      </ul>
-      <p>
-        Estou em busca da minha primeira experiência <br>
-        Quem sabe na sua empresa? <br>
-        Estou disponível para bater um papo, você pode entrar em contato pelo robertomartinsramm@gmail.com ou (11)
-        98798-7907</p>
+    <section class="contact" id="contact">
+      <div class="container">
+        <p>Olá, eu sou</p>
+        <h1 class="my-name-h1">Roberto Martins</h1>
+        <p>Futuro Desenvolvedor Front-End</p>
+        <ul class="links">
+          <li><a href="" class="btn-primary">GitHub</a></li>
+          <li><a href="" class="btn-primary">Linkedin</a></li>
+          <li><a href="" class="btn-primary">Currículo</a></li>
+        </ul>
+        <p class="opportunity">
+          Estou em busca da minha primeira experiência <br>
+          Quem sabe na sua empresa? <br>
+          Estou disponível para bater um papo, <br> 
+          você pode entrar em contato pelo <br>
+           <span class="font-blue">robertomartinsramm@gmail.com</span> ou <span class="font-blue">  (11) 98798-7907 </span>
+        </p>
+      </div>
+
     </section>
 
     <section class="about" id="about">
@@ -53,7 +65,9 @@
     </section>
 
     <section class="projects" id="projects">
-      <h2>Projetos</h2>
+      <div class="container">
+        <h2>Projetos</h2>
+      </div>
     </section>
 
   </main>
@@ -67,7 +81,7 @@
       <li><a href="">Currículo</a></li>
     </ul>
   </footer>
-  
+
   <script src="js/script.js"></script>
 </body>
 
