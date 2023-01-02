@@ -1,0 +1,20 @@
+/* RESET */
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+/*  */
+
+body{
+  font-family: sans-serif;
+}
