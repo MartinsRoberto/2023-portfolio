@@ -156,7 +156,6 @@ a:hover{
   height: calc(100vh - 80px);
 }
 
-
 .contact .container{
   height: 100%;
   display: flex;
@@ -200,37 +199,27 @@ a:hover{
   background-color: var(--color-black-2);
 }
 
-.projects h3{
-  margin-bottom: 20px;
-  color: var(--color-white-1);
-  border-bottom: 2px solid transparent;
-  display: inline-block;
-  cursor: pointer;
+.projects .project-box{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.projects h3:hover{
+.projects a{
+  color: var(--color-white-1);
+  border-bottom: 2px solid transparent;
+  font-weight: normal;
+}
+
+.projects a:hover{
   color: var(--color-blue-1);
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
 
-.projects .project-box{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 5%;
-}
-
-.projects .project-item{
-  margin-bottom: 30px;
-}
-
-.projects .project-img{
-  max-width: 100%;
-}
-
-.projects .project-technologies{
-  color: var(--color-blue-1);
-  font-size: 14px;
+.projects .project-tech{
+  color: var(--color-gray-1);
+  font-size: 12px;
 }
 .footer{
   padding: 40px 0px;
@@ -239,15 +228,16 @@ a:hover{
 }
 
 .footer .links{
+  margin-top: 30px;
   display: flex;
   gap: 20px;
   justify-content: center;
 }
+
 @media (max-width: 900px){
   .header .btn-mobile{
     display: block;
   }
-
   .header .menu{
     position: absolute;
     top: 80px;
@@ -268,9 +258,11 @@ a:hover{
     display: block;
   }
 
+  .opportunity{
+    display: none;
+  }
+
   .projects .project-box{
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 1em;
   }
 }
